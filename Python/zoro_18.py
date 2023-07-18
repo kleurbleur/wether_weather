@@ -1,5 +1,5 @@
 # SET TO TRUE WHEN RUNNING ON PI
-pi = True
+pi = False
 
 
 import time,socket,datetime,json, threading

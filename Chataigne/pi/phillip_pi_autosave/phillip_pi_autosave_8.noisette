@@ -375,7 +375,7 @@
               "shortName": "_sequences_Sequence_togglePlay"
             },
             {
-              "value": 53393.24609375,
+              "value": 33024.0,
               "controlAddress": "/_shut",
               "type": "Float",
               "niceName": "/shut",
@@ -1024,7 +1024,7 @@
                       "controlAddress": "/length"
                     },
                     {
-                      "value": 126.120002746582,
+                      "value": 0.0,
                       "controlAddress": "/position"
                     },
                     {
@@ -1245,7 +1245,7 @@
                       "controlAddress": "/length"
                     },
                     {
-                      "value": 126.120002746582,
+                      "value": 0.0,
                       "controlAddress": "/position"
                     },
                     {
@@ -1453,7 +1453,7 @@
                               {
                                 "parameters": [
                                   {
-                                    "value": 269,
+                                    "value": 0,
                                     "hexMode": false,
                                     "controlAddress": "/#1"
                                   }
@@ -1461,7 +1461,7 @@
                                 "niceName": "#1",
                                 "type": "Integer",
                                 "param": {
-                                  "value": 269,
+                                  "value": 0,
                                   "hexMode": false,
                                   "controlAddress": "/sequences/sequence/layers/saturation/mapping/outputs/mappingOutput/command/arguments/#1/#1"
                                 },
@@ -1511,7 +1511,7 @@
                       "controlAddress": "/length"
                     },
                     {
-                      "value": 126.120002746582,
+                      "value": 0.0,
                       "controlAddress": "/position"
                     },
                     {
@@ -2045,7 +2045,7 @@
                       "controlAddress": "/length"
                     },
                     {
-                      "value": 126.120002746582,
+                      "value": 0.0,
                       "controlAddress": "/position"
                     },
                     {
@@ -2753,7 +2753,7 @@
                       "controlAddress": "/length"
                     },
                     {
-                      "value": 126.120002746582,
+                      "value": 0.0,
                       "controlAddress": "/position"
                     },
                     {
@@ -3000,7 +3000,7 @@
                       "controlAddress": "/length"
                     },
                     {
-                      "value": 126.120002746582,
+                      "value": 0.0,
                       "controlAddress": "/position"
                     },
                     {
@@ -35864,7 +35864,7 @@
                       "controlAddress": "/length"
                     },
                     {
-                      "value": 126.120002746582,
+                      "value": 0.0,
                       "controlAddress": "/position"
                     },
                     {

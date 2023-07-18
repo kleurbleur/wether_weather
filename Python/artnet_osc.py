@@ -13,7 +13,26 @@ class dmx:
     ch2 = 0
     ch3 = 0
     ch4 = 0
-    
+    ch5 = 0
+    ch6 = 0
+class screen:
+    hue = 0
+    saturation = 0
+    brightness = 0
+
+
+def value_handler(address, *args)    :
+    dmx.ch1 = args[0]
+    dmx.ch2 = args[1]
+    dmx.ch3 = args[2]
+    dmx.ch4 = args[3]
+    dmx.ch5 = args[4]
+    dmx.ch6 = args[5]
+    screen.hue = args[6]
+    screen.saturation = args[7]
+    screen.brightness = args[8]
+
+
 
 def filter_handler(address, *args):
     dmx.ch1 = args[0]
