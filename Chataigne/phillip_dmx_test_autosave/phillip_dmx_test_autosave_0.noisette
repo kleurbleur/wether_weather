@@ -42,18 +42,6 @@
           {
             "value": "Record",
             "controlAddress": "/currentRecord"
-          },
-          {
-            "value": true,
-            "controlAddress": "/trimToFirstData"
-          },
-          {
-            "value": true,
-            "controlAddress": "/trimToLastData"
-          },
-          {
-            "value": true,
-            "controlAddress": "/loop"
           }
         ],
         "niceName": "Parrot",
@@ -63,162 +51,20 @@
           "/modules/osc/values/_hue",
           "/modules/osc/values/_onecrude",
           "/modules/osc/values/_onefine",
-          "/modules/osc/values/_twocrude"
+          "/modules/osc/values/_twocrude",
+          "/modules/osc/values/_twofine",
+          "/modules/osc/values/_shutcrude",
+          "/modules/osc/values/_shutfine",
+          "/modules/osc/values/_saturation"
         ],
         "records": {
           "items": [
             {
-              "niceName": "Test_Record_v1",
+              "niceName": "Record",
               "type": "Record",
               "data": {
-                "/modules/osc/values/_twocrude": [
-                  [
-                    0.0,
-                    0.0
-                  ]
-                ],
-                "/modules/osc/values/_onecrude": [
-                  [
-                    0.0,
-                    61680.0
-                  ]
-                ],
-                "/modules/osc/values/_onefine": [
-                  [
-                    0.0,
-                    48.5
-                  ]
-                ],
-                "/modules/osc/values/_brightness": [
-                  [
-                    0.0,
-                    1000.0
-                  ],
-                  [
-                    5.493569291666518,
-                    99.0
-                  ],
-                  [
-                    10.13312545833378,
-                    98.0
-                  ],
-                  [
-                    14.77285833333326,
-                    97.0
-                  ],
-                  [
-                    19.41309779166659,
-                    96.0
-                  ],
-                  [
-                    24.05304487500007,
-                    95.0
-                  ],
-                  [
-                    28.69326758333364,
-                    94.0
-                  ],
-                  [
-                    33.33303829166653,
-                    93.0
-                  ],
-                  [
-                    37.96461245833325,
-                    92.0
-                  ]
-                ],
-                "/modules/osc/values/_hue": [
-                  [
-                    0.0,
-                    0.0
-                  ],
-                  [
-                    7.083519666666689,
-                    1.0
-                  ],
-                  [
-                    8.684603916667129,
-                    2.0
-                  ],
-                  [
-                    10.28441437500032,
-                    3.0
-                  ],
-                  [
-                    11.8842728333334,
-                    4.0
-                  ],
-                  [
-                    13.48331300000018,
-                    5.0
-                  ],
-                  [
-                    15.08260287499979,
-                    6.0
-                  ],
-                  [
-                    16.68510650000053,
-                    7.0
-                  ],
-                  [
-                    18.2841929166666,
-                    8.0
-                  ],
-                  [
-                    19.88332058333344,
-                    9.0
-                  ],
-                  [
-                    21.49282370833362,
-                    10.0
-                  ],
-                  [
-                    23.08297575000051,
-                    11.0
-                  ],
-                  [
-                    24.68361158333346,
-                    12.0
-                  ],
-                  [
-                    26.28322891666721,
-                    13.0
-                  ],
-                  [
-                    27.88459791666719,
-                    14.0
-                  ],
-                  [
-                    29.48487558333363,
-                    15.0
-                  ],
-                  [
-                    31.09324916666674,
-                    16.0
-                  ],
-                  [
-                    32.68479791666687,
-                    17.0
-                  ],
-                  [
-                    34.28518395833362,
-                    18.0
-                  ],
-                  [
-                    35.89333145833371,
-                    19.0
-                  ],
-                  [
-                    37.48322150000013,
-                    20.0
-                  ],
-                  [
-                    39.08420600000045,
-                    21.0
-                  ]
-                ]
               },
-              "totalTime": 39.08420600000045
+              "totalTime": 0.0
             }
           ],
           "viewOffset": [
@@ -498,7 +344,7 @@
         "values": {
           "parameters": [
             {
-              "value": 97.0,
+              "value": 96.0,
               "controlAddress": "/_brightness",
               "type": "Float",
               "niceName": "/brightness",
@@ -510,7 +356,7 @@
               "shortName": "_brightness"
             },
             {
-              "value": 7.0,
+              "value": 10.0,
               "controlAddress": "/_hue",
               "type": "Float",
               "niceName": "/hue",
@@ -522,7 +368,6 @@
               "shortName": "_hue"
             },
             {
-              "value": 0.0,
               "controlAddress": "/_one",
               "type": "Float",
               "niceName": "/one",
@@ -558,7 +403,6 @@
               "shortName": "_onefine"
             },
             {
-              "value": 0.0,
               "controlAddress": "/_saturation",
               "type": "Float",
               "niceName": "/saturation",
@@ -987,102 +831,6 @@
         "processors": {
           "items": [
             {
-              "niceName": "brigthness",
-              "editorIsCollapsed": true,
-              "type": "Mapping",
-              "im": {
-                "items": [
-                  {
-                    "parameters": [
-                      {
-                        "value": "/modules/osc/values/_brightness",
-                        "controlAddress": "/inputValue"
-                      }
-                    ],
-                    "niceName": "Input Value",
-                    "type": "Input Value"
-                  }
-                ],
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              },
-              "params": {
-                "parameters": [
-                  {
-                    "value": 50,
-                    "hexMode": false,
-                    "controlAddress": "/updateRate"
-                  }
-                ],
-                "editorIsCollapsed": true
-              },
-              "filters": {
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              },
-              "outputs": {
-                "items": [
-                  {
-                    "niceName": "MappingOutput",
-                    "type": "BaseItem",
-                    "commandModule": "osc",
-                    "commandPath": "",
-                    "commandType": "Custom Message",
-                    "command": {
-                      "parameters": [
-                        {
-                          "value": "/brightness",
-                          "controlAddress": "/address"
-                        }
-                      ],
-                      "paramLinks": {
-                      },
-                      "argManager": {
-                        "items": [
-                          {
-                            "parameters": [
-                              {
-                                "value": 97,
-                                "hexMode": false,
-                                "controlAddress": "/#1"
-                              }
-                            ],
-                            "niceName": "#1",
-                            "type": "Integer",
-                            "param": {
-                              "value": 97,
-                              "hexMode": false,
-                              "controlAddress": "/states/parrotMapping/processors/brigthness/outputs/mappingOutput/command/arguments/#1/#1"
-                            },
-                            "paramLink": {
-                              "linkType": 1,
-                              "mappingValueIndex": 0
-                            }
-                          }
-                        ],
-                        "viewOffset": [
-                          0,
-                          0
-                        ],
-                        "viewZoom": 1.0
-                      }
-                    }
-                  }
-                ],
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              }
-            },
-            {
               "niceName": "hue",
               "editorIsCollapsed": true,
               "type": "Mapping",
@@ -1144,7 +892,7 @@
                           {
                             "parameters": [
                               {
-                                "value": 7,
+                                "value": 10,
                                 "hexMode": false,
                                 "controlAddress": "/#1"
                               }
@@ -1152,7 +900,7 @@
                             "niceName": "#1",
                             "type": "Integer",
                             "param": {
-                              "value": 7,
+                              "value": 10,
                               "hexMode": false,
                               "controlAddress": "/states/parrotMapping/processors/hue/outputs/mappingOutput/command/arguments/#1/#1"
                             },
@@ -1167,6 +915,413 @@
                           0
                         ],
                         "viewZoom": 1.0
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "saturation",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/osc/values/_saturation",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "osc",
+                    "commandPath": "",
+                    "commandType": "Custom Message",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/saturation",
+                          "controlAddress": "/address"
+                        }
+                      ],
+                      "paramLinks": {
+                      },
+                      "argManager": {
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": 0,
+                                "hexMode": false,
+                                "controlAddress": "/#1"
+                              }
+                            ],
+                            "niceName": "#1",
+                            "type": "Integer",
+                            "param": {
+                              "value": 0,
+                              "hexMode": false,
+                              "controlAddress": "/states/parrotMapping/processors/saturation/outputs/mappingOutput/command/arguments/#1/#1"
+                            },
+                            "paramLink": {
+                              "linkType": 1,
+                              "mappingValueIndex": 0
+                            }
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "brigthness",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/osc/values/_brightness",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "osc",
+                    "commandPath": "",
+                    "commandType": "Custom Message",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/brightness",
+                          "controlAddress": "/address"
+                        }
+                      ],
+                      "paramLinks": {
+                      },
+                      "argManager": {
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": 96,
+                                "hexMode": false,
+                                "controlAddress": "/#1"
+                              }
+                            ],
+                            "niceName": "#1",
+                            "type": "Integer",
+                            "param": {
+                              "value": 96,
+                              "hexMode": false,
+                              "controlAddress": "/states/parrotMapping/processors/brigthness/outputs/mappingOutput/command/arguments/#1/#1"
+                            },
+                            "paramLink": {
+                              "linkType": 1,
+                              "mappingValueIndex": 0
+                            }
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "shutcrude",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/osc/values/_shutcrude",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Remap",
+                    "type": "Remap",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/useCustomInputRange"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            1.0
+                          ],
+                          "controlAddress": "/inputMin_Max"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            255.0
+                          ],
+                          "controlAddress": "/targetMin_Max"
+                        },
+                        {
+                          "value": false,
+                          "controlAddress": "/forceFloat"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "dmx",
+                    "commandPath": "",
+                    "commandType": "Set value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/universe",
+                          "controlAddress": "/universe"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "shutfine",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/osc/values/_shutfine",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Remap",
+                    "type": "Remap",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/useCustomInputRange"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            1.0
+                          ],
+                          "controlAddress": "/inputMin_Max"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            255.0
+                          ],
+                          "controlAddress": "/targetMin_Max"
+                        },
+                        {
+                          "value": false,
+                          "controlAddress": "/forceFloat"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "dmx",
+                    "commandPath": "",
+                    "commandType": "Set value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/universe",
+                          "controlAddress": "/universe"
+                        },
+                        {
+                          "value": 2,
+                          "hexMode": false,
+                          "controlAddress": "/channel"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
                       }
                     }
                   }
@@ -1212,6 +1367,40 @@
                 "editorIsCollapsed": true
               },
               "filters": {
+                "items": [
+                  {
+                    "niceName": "Remap",
+                    "type": "Remap",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/useCustomInputRange"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            1.0
+                          ],
+                          "controlAddress": "/inputMin_Max"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            255.0
+                          ],
+                          "controlAddress": "/targetMin_Max"
+                        },
+                        {
+                          "value": false,
+                          "controlAddress": "/forceFloat"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
                 "viewOffset": [
                   0,
                   0
@@ -1231,6 +1420,341 @@
                         {
                           "value": "/universe",
                           "controlAddress": "/universe"
+                        },
+                        {
+                          "value": 3,
+                          "hexMode": false,
+                          "controlAddress": "/channel"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "onefine",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/osc/values/_onefine",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Remap",
+                    "type": "Remap",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/useCustomInputRange"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            1.0
+                          ],
+                          "controlAddress": "/inputMin_Max"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            255.0
+                          ],
+                          "controlAddress": "/targetMin_Max"
+                        },
+                        {
+                          "value": false,
+                          "controlAddress": "/forceFloat"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "dmx",
+                    "commandPath": "",
+                    "commandType": "Set value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/universe",
+                          "controlAddress": "/universe"
+                        },
+                        {
+                          "value": 4,
+                          "hexMode": false,
+                          "controlAddress": "/channel"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "twocrude",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/osc/values/_twocrude",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Remap",
+                    "type": "Remap",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/useCustomInputRange"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            1.0
+                          ],
+                          "controlAddress": "/inputMin_Max"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            255.0
+                          ],
+                          "controlAddress": "/targetMin_Max"
+                        },
+                        {
+                          "value": false,
+                          "controlAddress": "/forceFloat"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "dmx",
+                    "commandPath": "",
+                    "commandType": "Set value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/universe",
+                          "controlAddress": "/universe"
+                        },
+                        {
+                          "value": 5,
+                          "hexMode": false,
+                          "controlAddress": "/channel"
+                        }
+                      ],
+                      "paramLinks": {
+                        "value": {
+                          "linkType": 1,
+                          "mappingValueIndex": 0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "twofine",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/modules/osc/values/_twofine",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "items": [
+                  {
+                    "niceName": "Remap",
+                    "type": "Remap",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/useCustomInputRange"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            1.0
+                          ],
+                          "controlAddress": "/inputMin_Max"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            255.0
+                          ],
+                          "controlAddress": "/targetMin_Max"
+                        },
+                        {
+                          "value": false,
+                          "controlAddress": "/forceFloat"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "dmx",
+                    "commandPath": "",
+                    "commandType": "Set value",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/universe",
+                          "controlAddress": "/universe"
+                        },
+                        {
+                          "value": 6,
+                          "hexMode": false,
+                          "controlAddress": "/channel"
                         }
                       ],
                       "paramLinks": {
@@ -1269,7 +1793,7 @@
           {
             "value": [
               301.0,
-              287.0
+              252.0
             ],
             "controlAddress": "/viewUISize"
           },
@@ -1287,6 +1811,18 @@
               "editorIsCollapsed": true,
               "type": "Action",
               "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
                 "viewOffset": [
                   0,
                   0
@@ -1294,6 +1830,431 @@
                 "viewZoom": 1.0
               },
               "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "generic",
+                    "commandPath": "",
+                    "commandType": "Trigger a Control",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/parrots/parrot/startRecord",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "StopRecording",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "generic",
+                    "commandPath": "",
+                    "commandType": "Trigger a Control",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/parrots/parrot/stopRecord",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "Play",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "generic",
+                    "commandPath": "",
+                    "commandType": "Trigger a Control",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/parrots/parrot/play",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "Stop",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "generic",
+                    "commandPath": "",
+                    "commandType": "Trigger a Control",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/parrots/parrot/stop",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "Pause",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "generic",
+                    "commandPath": "",
+                    "commandType": "Trigger a Control",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/parrots/parrot/pause",
+                          "controlAddress": "/target"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequencesOff": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            },
+            {
+              "niceName": "Status",
+              "editorIsCollapsed": true,
+              "type": "Mapping",
+              "im": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "/parrots/parrot/status",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value",
+                    "type": "Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "params": {
+                "parameters": [
+                  {
+                    "value": 50,
+                    "hexMode": false,
+                    "controlAddress": "/updateRate"
+                  }
+                ],
+                "editorIsCollapsed": true
+              },
+              "filters": {
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "outputs": {
+                "items": [
+                  {
+                    "niceName": "MappingOutput",
+                    "type": "BaseItem",
+                    "commandModule": "osc",
+                    "commandPath": "",
+                    "commandType": "Custom Message",
+                    "command": {
+                      "parameters": [
+                        {
+                          "value": "/status",
+                          "controlAddress": "/address"
+                        }
+                      ],
+                      "paramLinks": {
+                      },
+                      "argManager": {
+                        "items": [
+                          {
+                            "parameters": [
+                              {
+                                "value": "0",
+                                "controlAddress": "/#1"
+                              }
+                            ],
+                            "niceName": "#1",
+                            "type": "String",
+                            "param": {
+                              "value": "0",
+                              "controlAddress": "/states/parrotControl/processors/status/outputs/mappingOutput/command/arguments/#1/#1"
+                            },
+                            "paramLink": {
+                              "linkType": 1,
+                              "mappingValueIndex": 0
+                            }
+                          }
+                        ],
+                        "viewOffset": [
+                          0,
+                          0
+                        ],
+                        "viewZoom": 1.0
+                      }
+                    }
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              }
+            }
+          ],
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        }
+      },
+      {
+        "parameters": [
+          {
+            "value": [
+              -771.0,
+              116.0
+            ],
+            "controlAddress": "/viewUIPosition"
+          },
+          {
+            "value": [
+              301.0,
+              216.0
+            ],
+            "controlAddress": "/viewUISize"
+          },
+          {
+            "value": true,
+            "controlAddress": "/active"
+          }
+        ],
+        "niceName": "MainControl",
+        "type": "State",
+        "processors": {
+          "items": [
+            {
+              "niceName": "Save",
+              "editorIsCollapsed": true,
+              "type": "Action",
+              "conditions": {
+                "items": [
+                  {
+                    "parameters": [
+                      {
+                        "value": "",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "From Input Value",
+                    "type": "From Input Value"
+                  }
+                ],
+                "viewOffset": [
+                  0,
+                  0
+                ],
+                "viewZoom": 1.0
+              },
+              "consequences": {
+                "items": [
+                  {
+                    "niceName": "Consequence",
+                    "type": "Consequence",
+                    "commandModule": "generic",
+                    "commandPath": "",
+                    "commandType": "Save Session",
+                    "command": {
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
                 "viewOffset": [
                   0,
                   0
@@ -1381,10 +2342,6 @@
                     {
                       "value": 2730.0,
                       "controlAddress": "/length"
-                    },
-                    {
-                      "value": 0.0,
-                      "controlAddress": "/position"
                     },
                     {
                       "value": [
@@ -3504,10 +4461,6 @@
                       "controlAddress": "/length"
                     },
                     {
-                      "value": 0.0,
-                      "controlAddress": "/position"
-                    },
-                    {
                       "value": [
                         0.0,
                         1000.0
@@ -4113,10 +5066,6 @@
                     {
                       "value": 2730.0,
                       "controlAddress": "/length"
-                    },
-                    {
-                      "value": 0.0,
-                      "controlAddress": "/position"
                     },
                     {
                       "value": [
@@ -4906,10 +5855,6 @@
                       "controlAddress": "/length"
                     },
                     {
-                      "value": 0.0,
-                      "controlAddress": "/position"
-                    },
-                    {
                       "value": [
                         0.0,
                         255.0
@@ -5528,10 +6473,6 @@
                     {
                       "value": 2730.0,
                       "controlAddress": "/length"
-                    },
-                    {
-                      "value": 0.0,
-                      "controlAddress": "/position"
                     },
                     {
                       "value": [
@@ -6153,10 +7094,6 @@
                     {
                       "value": 2730.0,
                       "controlAddress": "/length"
-                    },
-                    {
-                      "value": 0.0,
-                      "controlAddress": "/position"
                     },
                     {
                       "value": [
@@ -6884,10 +7821,6 @@
                     {
                       "value": 2730.0,
                       "controlAddress": "/length"
-                    },
-                    {
-                      "value": 0.0,
-                      "controlAddress": "/position"
                     },
                     {
                       "value": [
@@ -14916,10 +15849,6 @@
                       "controlAddress": "/length"
                     },
                     {
-                      "value": 0.0,
-                      "controlAddress": "/position"
-                    },
-                    {
                       "value": [
                         0.0,
                         255.0
@@ -15751,10 +16680,6 @@
                     {
                       "value": 2730.0,
                       "controlAddress": "/length"
-                    },
-                    {
-                      "value": 0.0,
-                      "controlAddress": "/position"
                     },
                     {
                       "value": [
@@ -38155,8 +39080,7 @@
             0
           ],
           "viewZoom": 1.0
-        },
-        "destModule": "customVariables"
+        }
       }
     ],
     "viewOffset": [
